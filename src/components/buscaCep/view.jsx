@@ -8,7 +8,9 @@ export default (props) => {
                 Digite um cep
             </label>
             <input id='CEP' type='number' onChange={(e) => props.setCep(e.target.value)} />
-            <input type='submit' onClick={() => props.submitForm()} />
+            <input type='submit' onClick={() => props.submitClick()} />
+            <br />
+            <span>{props.logradouro}</span>
         </>
     );
 }
