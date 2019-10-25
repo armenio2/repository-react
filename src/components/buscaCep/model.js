@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import View from './view';
-import GetCep from '../../repository/buscaCep.repository';
+import GetCep from '../../repository/getCep.repository';
 
 export default () => {
 
     const [cep, setCep] = useState(); //dado do form
-    const [result, setResult] = useState(); //resultado da api
     const [params, setParams] = useState(0); //parametros para a api
+    const [result, setResult] = useState(); //resultado da api
     const [logradouro, setLogradouro] = useState() //parse do resultado da api
+
+    //obs: é possível a view renderizar dinamicamente oque vier da api, ou ela ser parseada na model, isso varia de acordo com o gosto.
 
     useEffect(() => {
 
