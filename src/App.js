@@ -1,5 +1,5 @@
 import React from 'react';
-import BuscaCep from './components/buscaCep/model';
+import BuscaCep from './components/buscaCep/controller';
 
 function App() {
   return (
